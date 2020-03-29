@@ -1,0 +1,309 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+input[type='button'], input[type='submit'], input[type='file'], button {
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    /*word-break: break-all;*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*font-size: 50px;*/
+    font-size: 16px;
+    /* width: 100%;*/
+}
+
+body {
+    width: 100%;
+    /*max-width: 750px;*/
+    /*margin:0 auto !important;*/
+    /* //color:#333; */
+    /* //font-family: sans-serif;
+	//font-family: "PingFang SC","Lantinghei SC","Microsoft YaHei",arial,"\5b8b\4f53",sans-serif,tahoma; */
+    /*font-size: 0.26rem;*/
+    /* //word-wrap: break-word; */
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    /*// width: 100%;*/
+    overflow-x: hidden;
+    /* // -webkit-overflow-scrolling: touch; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+main, header, nav, footer, article, aside, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+em {
+    color: red;
+}
+
+/*
+ *	去除按钮的默认样式
+ * */
+
+input[type="submit"], input[type="button"], button[type="submit"], button[type="button"], input[type="reset"], button[type="reset"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0;
+}
+
+/*
+ *	去除文本框获取焦点时的高亮框
+ * */
+
+input[type="text"]:focus, button[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    /* border: 0; */
+}
+
+button, input {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*end*/
+
+/* public css */
+
+/* 清除浮动 */
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+}
+
+/*文字一行溢出*/
+
+.oneline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+/*文字两行溢出*/
+
+.twoline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/*文字三行溢出*/
+
+.Threeline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* 转换成flex容器 */
+
+.flex {
+    display: flex;
+}
+
+/* 竖直排列 */
+
+.flexv {
+    flex-direction: column;
+}
+
+/* 自动填充 */
+
+.flex1 {
+    flex: 1;
+}
+
+/* 自动换行 */
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 水平居中 */
+
+.jus-c {
+    display: flex;
+    justify-content: center;
+}
+
+/* 水平两端对齐 */
+
+.jus-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 水平相等间距 */
+
+.jus-a {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 主轴终端对齐 */
+
+.jus-e {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 竖直居中 */
+
+.ali-c {
+    display: flex;
+    align-items: center;
+}
+
+/* 水平垂直居中 */
+
+.flexc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greybody {
+    background: #f4f4f4;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.fill-auto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tc {
+    text-align: center;
+}
+
+/* 公用 标题 */
+
+.commontitle {
+    margin: auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.2rem auto;
+}
+
+.commontitle span {
+    color: #333333;
+    font-size: .32rem;
+    position: relative;
+    padding-left: .3rem;
+}
+
+._title:after {
+    content: "";
+    height: .45rem;
+    width: .08rem;
+    border-radius: .05rem;
+    background-color: #ff610c;
+    left: 0;
+    top: .01rem;
+    position: absolute;
+}
+
+.commontitle i {
+    font-size: .24rem;
+    color: #999999;
+}
+
+body {
+    /* background: #f2f2f2; */
+}
+.overflow{
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+
+
+.cursor{
+    cursor: pointer;
+}
+.el-menu-item:hover{
+    background:#223041!important
+  }
+.el-submenu__title:hover {
+    background: #223041 !important;
+}
